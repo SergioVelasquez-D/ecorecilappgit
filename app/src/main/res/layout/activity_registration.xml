@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaturaleza"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="346dp"
+        android:layout_height="640dp"
+        android:background="#80FFE680"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+        <!-- Campo de nombre de usuario con fondo transparente y línea inferior -->
+        <LinearLayout
+            android:id="@+id/nameUserInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de usuario:"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+        <!-- Campo de email con fondo transparente y línea inferior -->
+        <LinearLayout
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electronico:"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+        <!-- Contraseña -->
+        <LinearLayout
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña:"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="#000000"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+        <!-- Campo de fecha de usuario con fondo transparente y línea inferior -->
+        <LinearLayout
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha de nacimiento:"
+                android:inputType="date"
+                android:padding="14dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+        <!-- Campo de genero de usuario con fondo transparente y línea inferior -->
+        <LinearLayout
+            android:id="@+id/genreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Genero:"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/conditionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00FFFFFF"
+            android:text="Lee nuestros términos y condiciones"
+            android:textColor="#463535"
+            android:textSize="18sp"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/dataTraButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="#00FFFFFF"
+            android:text="Lee nuestro tratamiento de datos"
+            android:textColor="#463535"
+            android:textSize="18sp"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/registerFunButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#ABC837"
+            android:text="Registrarse"
+            android:textColor="#463535"
+            android:textSize="18sp"
+            android:translationY="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configuration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaturaleza"
+    tools:context=".ConfiguracionActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="420dp"
+        android:layout_height="706dp"
+        android:background="#80FFE680"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+
+        <!-- Campo de email con fondo transparente y línea inferior -->
+        <Switch
+            android:id="@+id/switchOscure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Modo oscuro"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/userName"
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de usuario:"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/metricSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Sistema de medidas"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/sintButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Sistema Internacional"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/singButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Sistema Ingles"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/typeCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de moneda"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/dateformat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formato de fecha"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idioma"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/frecuencyNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frecuencia de Consejo del dia"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerNotification"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Notificaciones de la app"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar contraseña:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editChangePassword"
+            style="@style/TransparentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Escribe una nueva contraseña"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#7A7979"
+            android:textColorHint="#7E7C7C" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

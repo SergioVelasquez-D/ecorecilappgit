@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaturaleza"
+    tools:context=".CategoriasActivity">
+
+    <TextView
+        android:id="@+id/tittleCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el material a registrar"
+        android:textColor="#800600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleCategories"
+        app:layout_constraintVertical_bias="0.06">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFCC80"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagePapel"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:srcCompat="@drawable/papel" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textPapel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papel"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:translationY="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTotalPapel"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total reciclado:"
+                        android:textAlignment="viewStart"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+
+                    <TextView
+                        android:id="@+id/textTotalPapel2"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="10 kg"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonPapel"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ABC837"
+                android:contentDescription="@string/button_edit"
+                android:insetLeft="4dp"
+                android:insetRight="4dp"
+                android:paddingStart="13dp"
+                android:translationY="10dp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconPadding="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.06">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF8280"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagePlastico"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:srcCompat="@drawable/plastico" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textPlastico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plástico"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:translationY="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTotalPlastico"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total reciclado:"
+                        android:textAlignment="viewStart"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+
+                    <TextView
+                        android:id="@+id/textTotalPlastico2"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="20 kg"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonPlastico"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ABC837"
+                android:contentDescription="@string/button_edit"
+                android:insetLeft="4dp"
+                android:insetRight="4dp"
+                android:paddingStart="13dp"
+                android:translationY="10dp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconPadding="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        app:layout_constraintVertical_bias="0.06">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFA9"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageMetales"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:srcCompat="@drawable/metales" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textMetales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metales"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:translationY="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTotalMetales"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total reciclado:"
+                        android:textAlignment="viewStart"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+
+                    <TextView
+                        android:id="@+id/textTotalMetales2"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5 kg"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonMetales"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ABC837"
+                android:contentDescription="@string/button_edit"
+                android:insetLeft="4dp"
+                android:insetRight="4dp"
+                android:paddingStart="13dp"
+                android:translationY="10dp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconPadding="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintVertical_bias="0.06">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8086FF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageVidrio"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:srcCompat="@drawable/vidrio" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textVidrio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vidrio"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:translationY="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTotalVidrio"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total reciclado:"
+                        android:textAlignment="viewStart"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+
+                    <TextView
+                        android:id="@+id/textTotalVidrio2"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 kg"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:translationY="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonVidrio"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#ABC837"
+                android:contentDescription="@string/button_edit"
+                android:insetLeft="4dp"
+                android:insetRight="4dp"
+                android:paddingStart="13dp"
+                android:translationY="10dp"
+                app:cornerRadius="10dp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconPadding="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+        app:layout_constraintVertical_bias="0.232">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/facebook"
+            android:contentDescription="@string/button_edit"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/instagram"
+            android:contentDescription="@string/button_edit"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerFunButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#ABC837"
+        android:text="Desafios"
+        android:textColor="#463535"
+        android:textSize="18sp"
+        android:translationY="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#07FFFFFF"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconSize="30dp"
+        app:iconTint="#800600"
+        app:layout_constraintBottom_toTopOf="@+id/tittleCategories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/button_edit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
