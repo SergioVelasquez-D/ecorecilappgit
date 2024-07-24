@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registroma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaturaleza"
+    tools:context=".RegistroMaActivity">
+
+    <Button
+        android:id="@+id/buttonEstadisticas2"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#07FFFFFF"
+        android:contentDescription="@string/button_edit"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconSize="30dp"
+
+        app:iconTint="#800600"
+        app:layout_constraintBottom_toTopOf="@+id/tittleRegisterMA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tittleRegisterMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el material a registrar"
+        android:textColor="#800600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/text_rounded"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_background"
+        android:gravity="center"
+        android:text="Papel"
+        android:textColor="#463535"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleRegisterMA" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="351dp"
+        android:layout_height="460dp"
+        android:background="#80FFE680"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_rounded"
+        app:layout_constraintVertical_bias="0.21">
+
+        <TextView
+            android:id="@+id/fechaTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona la fecha:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:text="dd/mm/aaaa"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#ABC837"
+            android:text="Fecha"
+            android:textColor="#463535"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_calendario"
+            app:iconTint="#463535" />
+
+
+        <TextView
+            android:id="@+id/typeCuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escribe la cantidad:"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/userName"
+                style="@style/TransparentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.0"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#463535" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/unitMetric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona la unidad:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ABC837"
+                android:insetLeft="10dp"
+                android:insetRight="10dp"
+                android:text="Guardar"
+                android:textColor="#463535"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_save"
+                app:iconTint="#463535" />
+
+            <Button
+                android:id="@+id/trashButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ABC837"
+                android:insetLeft="10dp"
+                android:insetRight="10dp"
+                android:text="Limpiar"
+                android:textColor="#463535"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/ic_clear"
+                app:iconTint="#463535" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="#463535" />
+
+        <TextView
+            android:id="@+id/totalAcumulate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total acumulado:"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalValue"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="Ganancia:"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valueMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25000 COP"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/estadisticasButton2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#ABC837"
+        android:text="Desafios"
+        android:textColor="#463535"
+        android:textSize="18sp"
+        android:translationY="20dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
