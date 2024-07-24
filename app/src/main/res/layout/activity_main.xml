@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <Button
-        android:id="@+id/estadisticas"
+        android:id="@+id/estadisticasButton"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginEnd="32dp"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <Button
-        android:id="@+id/desafios"
+        android:id="@+id/desafiosButton"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:backgroundTint="#ABC837"
@@ -79,7 +79,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
-        android:id="@+id/consejos"
+        android:id="@+id/consejosButton"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:backgroundTint="#ABC837"
@@ -93,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/estadisticas"
+        app:layout_constraintTop_toBottomOf="@+id/estadisticasButton"
         app:layout_constraintVertical_bias="0.214" />
 
     <Button

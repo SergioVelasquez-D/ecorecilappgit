@@ -1,6 +1,7 @@
 package com.sergio.ecoreciclaapp;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -24,6 +25,21 @@ public class RegistroMaActivity extends AppCompatActivity {
         buttonSelectDate = findViewById(R.id.buttonSelectDate);
 
         buttonSelectDate.setOnClickListener(v -> showDatePickerDialog());
+
+
+
+
+        Button btnEstadisticas = findViewById(R.id.estadisticasButton2);
+
+        // Set an OnClickListener to the button
+        btnEstadisticas.setOnClickListener(v -> {
+            // Create an Intent to start MainActivity
+            Intent intent = new Intent(RegistroMaActivity.this, EstadisticasActivity.class);
+            // Start MainActivity
+            startActivity(intent);
+        });
+
+
     }
 
     private void showDatePickerDialog() {
@@ -42,4 +58,6 @@ public class RegistroMaActivity extends AppCompatActivity {
                 year, month, day);
         datePickerDialog.show();
     }
+
+
 }

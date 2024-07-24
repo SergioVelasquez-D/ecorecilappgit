@@ -9,7 +9,7 @@
     tools:context=".RegistroMaActivity">
 
     <Button
-        android:id="@+id/buttonEstadisticas2"
+        android:id="@+id/menuButton2"
         android:layout_width="62dp"
         android:layout_height="56dp"
         android:backgroundTint="#07FFFFFF"
@@ -81,7 +81,7 @@
             android:layout_width="317dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="16dp"
+            android:padding="10dp"
             android:text="dd/mm/aaaa"
             android:textSize="18sp" />
 
@@ -93,6 +93,7 @@
             android:backgroundTint="#ABC837"
             android:text="Fecha"
             android:textColor="#463535"
+            android:textSize="16dp"
             app:cornerRadius="10dp"
             app:icon="@drawable/ic_calendario"
             app:iconTint="#463535" />
@@ -102,6 +103,7 @@
             android:id="@+id/typeCuantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="8dp"
             android:text="Escribe la cantidad:"
             android:textSize="18sp" />
 
@@ -113,7 +115,7 @@
             android:padding="8dp">
 
             <EditText
-                android:id="@+id/userName"
+                android:id="@+id/amountMa"
                 style="@style/TransparentEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,13 +127,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#000000" /> <!-- Cambia el color de la línea según tu preferencia -->
+                android:background="#000000" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/unitMetric"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="2dp"
             android:text="Selecciona la unidad:"
             android:textSize="18sp" />
 
@@ -142,8 +145,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:orientation="horizontal">
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
 
             <Button
                 android:id="@+id/saveButton"
@@ -178,8 +182,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@android:color/darker_gray"
             android:backgroundTint="#463535" />
 
@@ -192,8 +196,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="23dp"
-            android:orientation="horizontal">
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
 
             <TextView
                 android:id="@+id/totalValue"
@@ -221,12 +226,12 @@
     <Button
         android:id="@+id/estadisticasButton2"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:backgroundTint="#ABC837"
-        android:text="Desafios"
+        android:text="Estadisticas"
         android:textColor="#463535"
         android:textSize="18sp"
-        android:translationY="20dp"
+        android:translationY="14dp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

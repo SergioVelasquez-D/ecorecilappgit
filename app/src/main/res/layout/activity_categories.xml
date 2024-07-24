@@ -9,7 +9,7 @@
     tools:context=".CategoriasActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/menuButton"
         android:layout_width="62dp"
         android:layout_height="56dp"
         android:backgroundTint="#07FFFFFF"
@@ -411,7 +411,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/registerFunButton"
+        android:id="@+id/desafiosButton"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:backgroundTint="#ABC837"

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/desafios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaturaleza"
+    tools:context=".DesafioActivity">
+
+    <Button
+        android:id="@+id/menuButton4"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#07FFFFFF"
+        android:contentDescription="@string/button_edit"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconSize="30dp"
+
+        app:iconTint="#800600"
+        app:layout_constraintBottom_toTopOf="@+id/tittleChalleges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tittleChalleges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desafíos"
+        android:textColor="#800600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="351dp"
+        android:layout_height="520dp"
+        android:background="#80FFE680"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleChalleges"
+        app:layout_constraintVertical_bias="0.16000003">
+
+
+        <LinearLayout
+            android:id="@+id/layoutCompleted1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_background_completed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaCom1"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Reciclaste 10 kg de Papel!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaCom1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/baseline_star_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCompleted2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_completed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaCom2"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡No has fallado por 2 semanas!"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaCom2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/baseline_star_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCompleted3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_completed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaCom3"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Completaste 2 desafios!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaCom3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/baseline_star_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUnCompleted1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_uncompleted"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaUnCom1"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Completaste 2 desafios!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaUnCom1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/ic_radio_button_unchecked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUnCompleted2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_uncompleted"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaUnCom2"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Completaste 2 desafios!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaUnCom2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/ic_radio_button_unchecked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUnCompleted3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_uncompleted"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaUnCom3"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Completaste 2 desafios!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaUnCom3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/ic_radio_button_unchecked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUnCompleted4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_background_uncompleted"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewChaUnCom4"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¡Completaste 2 desafios!"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChaUnCom4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/button_edit"
+                app:srcCompat="@drawable/ic_radio_button_unchecked" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/consejosButton3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#ABC837"
+        android:text="Consejos"
+        android:textColor="#463535"
+        android:textSize="18sp"
+        android:translationY="14dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consejos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    tools:context=".ConsejosActivity">
+
+
+    <Button
+        android:id="@+id/menuButtonAdv"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#07FFFFFF"
+        android:contentDescription="@string/button_edit"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconSize="30dp"
+        app:iconTint="#800600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittleAdvice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consejo del día:"
+        android:textColor="#800600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuButtonAdv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/adviceLayout"
+        android:layout_width="321dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/rounded_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleAdvice">
+
+        <TextView
+            android:id="@+id/textAdvice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="&quot;Recuerda lavar y secar los envases de plástico antes de reciclarlos para garantizar su reutilización efectiva.&quot;"
+            android:textColor="#FFFFFF" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons1"
+        android:layout_width="284dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adviceLayout">
+
+        <ImageButton
+            android:id="@+id/buttonBackward1"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/button_edit"
+            app:srcCompat="@drawable/ic_arrow_back_24" />
+
+        <ImageButton
+            android:id="@+id/buttonFordward1"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/button_edit"
+            app:srcCompat="@drawable/ic_arrow_forward_24" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#463535"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons1" />
+
+    <TextView
+        android:id="@+id/tittleRecomendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Recomendaciones:"
+        android:textColor="#800600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <FrameLayout
+        android:id="@+id/recomendLayout"
+        android:layout_width="321dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleRecomendation">
+
+        <TextView
+            android:id="@+id/textRecomend"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="&quot;Reduce el uso de productos desechables optando por opciones reutilizables, como botellas y bolsas de tela.&quot;"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons2"
+        android:layout_width="284dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recomendLayout">
+
+        <ImageButton
+            android:id="@+id/buttonBackward2"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/button_edit"
+            app:srcCompat="@drawable/ic_arrow_back_24" />
+
+        <ImageButton
+            android:id="@+id/buttonFordward2"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/button_edit"
+            app:srcCompat="@drawable/ic_arrow_forward_24" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

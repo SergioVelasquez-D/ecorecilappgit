@@ -25,16 +25,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Find the button by its ID
-        Button btnConfiguration = findViewById(R.id.configButton);
-
-        // Set an OnClickListener to the button
-        btnConfiguration.setOnClickListener(v -> {
-            // Create an Intent to start MainActivity
-            Intent intent = new Intent(MainActivity.this, ConfiguracionActivity.class);
-            // Start MainActivity
-            startActivity(intent);
-        });
 
         Button btnCategorias = findViewById(R.id.categoriasButton);
 
@@ -42,6 +32,50 @@ public class MainActivity extends AppCompatActivity {
         btnCategorias.setOnClickListener(v -> {
             // Create an Intent to start MainActivity
             Intent intent = new Intent(MainActivity.this, CategoriasActivity.class);
+            // Start MainActivity
+            startActivity(intent);
+        });
+
+
+        Button btnEstadisticas = findViewById(R.id.estadisticasButton);
+
+        // Set an OnClickListener to the button
+        btnEstadisticas.setOnClickListener(v -> {
+            // Create an Intent to start MainActivity
+            Intent intent = new Intent(MainActivity.this, EstadisticasActivity.class);
+            // Start MainActivity
+            startActivity(intent);
+        });
+
+
+        Button btnDesafios = findViewById(R.id.desafiosButton);
+
+        // Set an OnClickListener to the button
+        btnDesafios.setOnClickListener(v -> {
+            // Create an Intent to start MainActivity
+            Intent intent = new Intent(MainActivity.this, DesafioActivity.class);
+            // Start MainActivity
+            startActivity(intent);
+        });
+
+
+        Button btnConsejos = findViewById(R.id.consejosButton);
+
+        // Set an OnClickListener to the button
+        btnConsejos.setOnClickListener(v -> {
+            // Create an Intent to start MainActivity
+            Intent intent = new Intent(MainActivity.this, ConsejosActivity.class);
+            // Start MainActivity
+            startActivity(intent);
+        });
+
+        // Find the button by its ID
+        Button btnConfiguration = findViewById(R.id.configButton);
+
+        // Set an OnClickListener to the button
+        btnConfiguration.setOnClickListener(v -> {
+            // Create an Intent to start MainActivity
+            Intent intent = new Intent(MainActivity.this, ConfiguracionActivity.class);
             // Start MainActivity
             startActivity(intent);
         });
